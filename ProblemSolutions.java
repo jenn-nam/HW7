@@ -48,7 +48,7 @@ public class ProblemSolutions {
 
             int minOrMax = i;
             for (int j = i + 1; j < n; j++) {
-                if ((ascending && values[j] < values[minOrMax])) || (!ascending && values[j] > values [minOrMax]) {
+                if ((ascending && values[j] < values[minOrMax])) || (!ascending && values[j] > values [minOrMax])) {
                     minOrMax = j;
                 }
             }
