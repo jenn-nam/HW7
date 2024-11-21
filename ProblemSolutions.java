@@ -1,6 +1,6 @@
 /******************************************************************
  *
- *   YOUR NAME / SECTION NUMBER
+ *   Jennifer Nambo/ 002
  *
  *   This java file contains the problem solutions for the methods selectionSort,
  *   mergeSortDivisibleByKFirst, asteroidsDestroyed, and numRescueCanoes methods.
@@ -43,16 +43,20 @@ public class ProblemSolutions {
         //current element is either small or larger than assumed value (unsorted)
         //swap values (get correct values in positions)
 
-
+        //go through each element staring is from next element
         for (int i = 0; i < n - 1; i++) {
-
+            //take the index currently being iterated over and assuming as min
             int minOrMax = i;
+            //then this will find the smallest element
             for (int j = i + 1; j < n; j++) {
+                //if element that is smaller is found then min is changed
                 if ((ascending && values[j] < values[minOrMax]) || (!ascending && values[j] > values [minOrMax])) {
+                    //index updated
                     minOrMax = j;
                 }
             }
-
+            //once loop is done if the index found is not equal then confirms a smaller one was found
+            //then switch
             int valueHolder = values[minOrMax];
             values[minOrMax] = values[i];
             values[i] = valueHolder;
@@ -116,6 +120,12 @@ public class ProblemSolutions {
         // ALLOCATES AUXILIARY DATA STRUCTURES (TEMPORARY ARRAYS). IT WILL BE EASIER
         // TO CODE WITH A SPACE COMPLEXITY OF O(N LOG N), WHICH IS FINE FOR PURPOSES
         // OF THIS PROGRAMMING EXERCISES.
+
+        //arrays to hold sub arrays as merging happens
+        //merging sub arrays (ones divisible by k) & ones not)?
+        //use loop - go through and make sure element is divisible by k
+
+
 
         return;
 
