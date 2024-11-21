@@ -57,8 +57,6 @@ public class ProblemSolutions {
             values[minOrMax] = values[i];
             values[i] = valueHolder;
 
-
-
         }
 
     } // End class selectionSort
@@ -171,7 +169,19 @@ public class ProblemSolutions {
 
     public static boolean asteroidsDestroyed(int mass, int[] asteroids) {
 
-        // YOUR CODE GOES HERE, CONSIDER USING ARRAYS.SORT()
+        //see if an asteroid can destroy the others
+        // sort the asteroids (ascending order & smaller asteroids first?)
+        //destroy asteroids
+        //return true or false based on if a planet can destroy asteroids
+
+        //sort array using Arrays.sort() as suggested
+        Array.sort(asteroids);
+        //using a for loop, we will go through the array
+        //each asteroid will be compared to see if the mass is greater than or equal to mass of planet
+        //if yes, return true.
+        // The asteroid is destroyed + mass increases by that of the asteroids mass
+
+        //otherwise, return false if mass is smaller + cant destroy asteroid
 
         return false;
 
