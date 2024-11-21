@@ -36,11 +36,28 @@ public class ProblemSolutions {
 
         int n = values.length;
 
+        //the loop will need to go through each element in the array.
+        //index will be either max or min.
+        //then find index of smallest or largest value (ascending)
+        //once found, compare elements
+        //current element is either small or larger than assumed value (unsorted)
+        //swap values (get correct values in positions)
+
+
         for (int i = 0; i < n - 1; i++) {
 
-            // YOU CODE GOES HERE -- COMPLETE THE INNER LOOP OF THIS
-            // "SELECTION SORT" ALGORITHM.
-            // DO NOT FORGET TO ADD YOUR NAME / SECTION ABOVE
+            int minOrMax = i;
+            for (int j = i + 1; j < n; j++) {
+                if ((ascending && values[j] < values[minOrMax])) || (!ascending && values[j] > values [minOrMax]) {
+                    minOrMax = j;
+                }
+            }
+
+            int valueHolder = values[minOrMax];
+            values[minOrMax] = values[j];
+            values[i] = valueHolder;
+
+
 
         }
 
