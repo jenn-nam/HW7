@@ -175,7 +175,7 @@ public class ProblemSolutions {
         //return true or false based on if a planet can destroy asteroids
 
         //sort array using Arrays.sort() as suggested
-        Array.sort(asteroids);
+        //Array.sort(asteroids);
         //using a for loop, we will go through the array
         //each asteroid will be compared to see if the mass is greater than or equal to mass of planet
         //if yes, return true.
@@ -247,7 +247,7 @@ public class ProblemSolutions {
             //account for when a sled is filled
             sledFilled++;
         }
-        return -1;
+        return sledFilled;
 
     }
 
