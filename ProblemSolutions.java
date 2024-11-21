@@ -189,7 +189,7 @@ public class ProblemSolutions {
             }
         }
         //All were destroyed
-        return false;
+        return true;
     }
 
 
