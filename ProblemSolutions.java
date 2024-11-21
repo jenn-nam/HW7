@@ -225,6 +225,28 @@ public class ProblemSolutions {
         //keep track of positions in the array so this way the weights can be used & to make sure there are 2 per sled max.
         //move positions based on whether ppl can share a sled/comparing weight
         //this will be done until all people are accounted for/assigned a sled
+
+        Arrays.sort(people);
+
+        //keeping track of the front of the array (lightest)
+        int ArrayFront = 0;
+        //keeping track of the back of the array (heaviest)
+        int ArrayBack = people.length - 1;
+        //keeping track of sleds needed
+        int sledFilled = 0;
+
+        //using loop for assigning people to sleds until no more people
+        while (arrayFront <= arrayBack) {
+            //check front and back people and see if the total weight together is less or equal to limit
+            if (people[ArrayFront] + people[ArrayBack] <= limit) {
+                //move positions to right from the front
+                ArrayFront++;
+            }
+            //move positions from back to the left
+            ArrayBack--;
+            //account for when a sled is filled
+            sledFilled++;
+        }
         return -1;
 
     }
