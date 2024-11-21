@@ -236,7 +236,7 @@ public class ProblemSolutions {
         int sledFilled = 0;
 
         //using loop for assigning people to sleds until no more people
-        while (arrayFront <= arrayBack) {
+        while (ArrayFront <= ArrayBack) {
             //check front and back people and see if the total weight together is less or equal to limit
             if (people[ArrayFront] + people[ArrayBack] <= limit) {
                 //move positions to right from the front
