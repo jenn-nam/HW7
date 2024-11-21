@@ -219,8 +219,12 @@ public class ProblemSolutions {
 
     public static int numRescueSleds(int[] people, int limit) {
 
-        // YOUR CODE GOES HERE, CONSIDER USING ARRAYS.SORT
-
+        //find out min number of sleds needed (max 2 per sled)
+        //weight has limit (given)
+        //take the array of people and sort it
+        //keep track of positions in the array so this way the weights can be used & to make sure there are 2 per sled max.
+        //move positions based on whether ppl can share a sled/comparing weight
+        //this will be done until all people are accounted for/assigned a sled
         return -1;
 
     }
